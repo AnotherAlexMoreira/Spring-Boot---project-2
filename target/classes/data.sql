@@ -1,5 +1,5 @@
-INSERT INTO USUARIO(nome, email, senha) values ( 'Jorel', 'Jorel@email.com', '123456' );
-INSERT INTO USUARIO(nome, email, senha) values ( 'Zé', 'Zé@email.com', '123456' );
+INSERT INTO USUARIO(nome, email, senha) values ( 'Jorel', 'Jorel@email.com', '$2a$10$ua5liCpwhIak56wC7AUEz.LFdw3jSU0/s6zykI5jb.NMINJAAKgwi' );
+INSERT INTO USUARIO(nome, email, senha) values ( 'Zé', 'Zé@email.com', '$2a$10$ua5liCpwhIak56wC7AUEz.LFdw3jSU0/s6zykI5jb.NMINJAAKgwi' );
 
 
 INSERT INTO CURSO(nome) values ( 'Spring Boot');
