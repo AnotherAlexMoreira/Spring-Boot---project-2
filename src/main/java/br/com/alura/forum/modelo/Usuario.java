@@ -11,7 +11,8 @@ import java.util.List;
 @Entity
 public class Usuario implements UserDetails {
 
-    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+	private static final long serialVersionUID = 1L;
+	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String nome;
     private String email;
@@ -23,7 +24,7 @@ public class Usuario implements UserDetails {
 
     }
 
-    public Usuario(long id, String nome, String email, String senha, List<Perfil> perfis) {
+    public Usuario(Long id, String nome, String email, String senha, List<Perfil> perfis) {
         this.id = id;
         this.nome = nome;
         this.email = email;
@@ -31,7 +32,7 @@ public class Usuario implements UserDetails {
         this.perfis.addAll(perfis);
     }
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
